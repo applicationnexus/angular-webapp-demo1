@@ -1,29 +1,25 @@
+<!--Create card HTML-->
 <div class="container-fluid">
-
-
-<div class="main-options-outer" >
-<div class="main-options">
-  <div class="row-fluid">
-    <div class="span12">
- 		<input type="text" placeholder="Question" onBlur="this.placeholder='Question'" onfocus="this.placeholder=''" ng-model="question" />
-    </div>
-    </div>
-   
-   <div class="row-fluid">
-    <div class="span12">
- 		<input type="text" ng-model="answer" placeholder="Answer" onBlur="this.placeholder='Answer'" onfocus="this.placeholder=''" />
-    </div>
-    </div>
-    
-    <div class="row-fluid">
-    <div class="span12">
- 		<input type="button" value='Delete' ng-click="deleteCard()" />
-        <input type="button" value='<--' ng-click="preCard()" />
-        <input type="button" value='-->' ng-clcik="nextCard()" />
-        <input type="button" value='Save' ng-click="saveCard()" />
-    </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
+    <div class="main-options-outer" >
+        <div class="main-options">
+            <div class="row-fluid">
+                <div class="span12">
+                    <input type="text" placeholder="Question" onBlur="this.placeholder='Question'" onfocus="this.placeholder=''" ng-model="question" />
+                </div><!--end span12-->
+            </div><!--end row-fluid-->
+            <div class="row-fluid">
+                <div class="span12">
+                    <input type="text" ng-model="answer" placeholder="Answer" onBlur="this.placeholder='Answer'" onfocus="this.placeholder=''" />
+                </div><!--end span12-->
+            </div><!--end row-fluid-->
+            <div class="row-fluid">
+                <div class="span12">
+                    <input type="button" value='Delete' ng-click="deleteCard()" />
+                    <input type="button" value='<--' ng-click="preCard()" />
+                    <input type="button" value='-->' ng-clcik="nextCard()" />
+                    <input type="button" value='Save' ng-click="saveCard()" />
+                </div><!--end span12-->
+            </div><!--end row-fluid-->
+        </div><!--end main-options-->
+    </div><!--end main-options-outer-->
+</div><!--end container-fluid-->

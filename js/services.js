@@ -3,9 +3,6 @@
 /* Services */
 
 var deckServices = angular.module('deckServices', []);
-
-
-
 deckServices.factory('userDecks',  function(){
 var items={};
 items.query=function(){
@@ -14,9 +11,6 @@ items.query=function(){
    return items;
   
 });
-
-
-
 deckServices.factory('purchaseDecks', 
   function(){
 var items={};
@@ -25,8 +19,6 @@ items.query=function(){
 	};
    return items;
 });
-
-
 deckServices.factory('downloadDecks', 
   function(){
 var items={};

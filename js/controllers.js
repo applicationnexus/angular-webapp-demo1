@@ -211,9 +211,6 @@ console.log($routeParas.id);
   }
 ]);
 
-
-
-
 //download deck Controller(download.html)
 deckControllers.controller('downloadCtrl',['$scope','$routeParams',"$location","downloadDecks",
   function($scope,$routeParas,$location,downloadDecks)

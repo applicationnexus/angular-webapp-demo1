@@ -1,20 +1,18 @@
+<!--Downlaod deck HTML-->
 <div class="container-fluid">
-
-
-<div class="main-options-outer" >
-<div class="main-options">
-<div class="row-fluid">
-     <div class="span12">
-      <input ng-model="query" type="search" placeholder="Search" onblur="this.placeholder='Search'" onfocus="this.placeholder=''">
-       </div>
-      </div>
-
-	<ul class="nav nav-list">
-  		<li class="purchaseList decks-list" ng-repeat="deck in downloadDecks | filter:query" ><a href="" >{{deck.name}}</a></li>
-        
-        
-	</ul>
-   <input type="button" value="Cancel" ng-click="cancel();" class="cancel-btn downlaod-cancel"/>
-   </div>
-   </div>
-   </div>
+  <div class="main-options-outer" >
+    <div class="main-options">
+      <div class="row-fluid">
+        <div class="span12">
+          <!--Deck search input box-->
+         <input ng-model="query" type="search" placeholder="Search" onblur="this.placeholder='Search'" onfocus="this.placeholder=''">
+        </div><!--end span12-->
+      </div><!--end row-fluid-->
+      <ul class="nav nav-list">
+        <!--List of downlaod decks-->
+        <li class="purchaseList decks-list" ng-repeat="deck in downloadDecks | filter:query" ><a href="" >{{deck.name}}</a></li>
+      </ul><!--end nav nav-list-->
+    <input type="button" value="Cancel" ng-click="cancel();" class="cancel-btn downlaod-cancel"/>
+    </div><!--end main-options-->
+  </div><!--end main-options-outer-->
+</div><!--end container-fluid-->

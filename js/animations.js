@@ -1,6 +1,6 @@
-var phonecatAnimations = angular.module('phonecatAnimations', ['ngAnimate']);
+var deckAnimations = angular.module('deckAnimations', ['ngAnimate']);
 
-phonecatAnimations.animation('.phone', function() {
+deckAnimations.animation('.phone', function() {
 
   var animateUp = function(element, className, done) {
     if(className != 'active') {
