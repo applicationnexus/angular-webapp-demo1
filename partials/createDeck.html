@@ -1,0 +1,29 @@
+<div class="container-fluid">
+
+
+<div class="main-options-outer" >
+<div class="main-options">
+  <div class="row-fluid">
+    <div class="span12">
+ <input type="text"  ng-model="setname"  placeholder="Type Set Name" onfocus="this.placeholder=''" onblur="this.placeholder='Type Set Name'"  />
+    </div>
+    </div>
+     <div class="row-fluid">
+     <div class="span12">       
+  <input type="text"   ng-model="category"   placeholder="Type Category" onfocus="this.placeholder=''" onblur="this.placeholder='Type Category'" />
+      </div>
+      </div>
+       <div class="row-fluid">
+      <div class="span6">
+       
+            <input type="button" value="Cancel"  ng-click="cancel();" class="cancel-btn" />
+            </div>
+            <div class="span6">
+            <input type="button" ng-if="path=='/createDeck'" value="Next" ng-click="create(setname,category);" class="next-btn" />
+            <input type="button" ng-if="path!='/createDeck'" value="Save" ng-click="save(setname,category);" class="save-btn" />
+		</div>
+       
+	</div>
+</div>
+</div>
+</div>
