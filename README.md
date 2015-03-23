@@ -20,7 +20,6 @@ Either clone this repository or fork it on GitHub and clone your fork:
 
     ```
     git clone https://github.com/soyabshaikh/angular-webapp-demo1.git
-    
     ```
 
 
@@ -30,19 +29,16 @@ Either clone this repository or fork it on GitHub and clone your fork:
     cd angular-webapp-demo1
     npm install
     bower install
-
     ```
 
 ### Running
      
     ```
      grunt serve
-
     ```
 
 ### Build
      
     ```
      grunt build
-
     ```
