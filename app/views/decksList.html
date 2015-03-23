@@ -1,0 +1,23 @@
+<!--Deck list HTML-->
+<div class="container-fluid">
+	<div class="main-options-outer" >
+		<div class="main-options">
+			<ul class="nav nav-list">
+				<!--List of all decks-->
+				<li ng-repeat="deck in decks" class="decks-list">
+					<label ng-if="option=='delete'" class="deck-delete-list">
+					<input type="checkbox" checklist-model="user.deckList" checklist-value="deck">
+					</label>
+					<a href="#/{{option}}/{{deck.id}}" ng-if="option!='delete'">{{deck.name}}</a>
+					<p ng-if="option=='delete'">{{deck.name}}</p>
+				</li>
+				<!--Link to download the deck-->
+				<li ng-if="option=='createCard'" class="decks-list"><a href="#/download">Download Deck</a></li>
+				<!--Link to purchase the deck-->
+				<li ng-if="option=='createCard'" class="decks-list"><a href="#/purchaseDeck">Purchase Deck</a></li>
+				<!--Link to trail the deck-->
+				<li ng-if="option=='createCard'" class="decks-list"><a href="">Trial Deck</a></li>
+			</ul><!--end nav nav-list-->
+		</div><!--end main-options-->
+	</div><!--end main-options-outer-->
+</div><!--end container-fluid-->
