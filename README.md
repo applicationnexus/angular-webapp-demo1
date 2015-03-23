@@ -18,9 +18,9 @@ You need to install Node.js and then the development tools. Node.js comes with a
 
 Either clone this repository or fork it on GitHub and clone your fork:
 
-    ```
+  
     git clone https://github.com/soyabshaikh/angular-webapp-demo1.git
-    ```
+  
 
 
 ### Install local dependencies (from the project root folder):
