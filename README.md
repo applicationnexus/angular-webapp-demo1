@@ -25,20 +25,17 @@ Either clone this repository or fork it on GitHub and clone your fork:
 
 ### Install local dependencies (from the project root folder):
 
-    ```
     cd angular-webapp-demo1
     npm install
     bower install
-    ```
+    
 
 ### Running
-     
-    ```
+
      grunt serve
-    ```
+    
 
 ### Build
-     
-    ```
+
      grunt build
-    ```
+    
